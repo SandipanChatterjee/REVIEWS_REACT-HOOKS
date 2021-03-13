@@ -1,0 +1,49 @@
+.auth {
+  /* position: relative; */
+  max-width: 1250px;
+  padding: 0 4rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.auth .imdbLogo {
+  width: 4rem;
+  height: 2.2rem;
+  /* position: relative; */
+  cursor: pointer;
+  margin-right: 1rem;
+  /* flex: 1; */
+}
+.auth .register {
+  margin-right: 1rem;
+}
+.login:hover {
+  color: #f5c593;
+  cursor: pointer;
+}
+.register:hover {
+  color: #f5c593;
+  cursor: pointer;
+}
+.container .items {
+  width: 12rem;
+  height: 20rem;
+  border: 1px solid #fff;
+  padding: 0.5rem;
+  margin: 0.5rem 1rem;
+  background: #080808;
+  border-radius: 2%;
+}
+
+.container .items .movieImg {
+  width: 100%;
+  height: 80%;
+  cursor: pointer;
+}
+
+.container .items .ratingContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}

@@ -1,0 +1,16 @@
+.login-field-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-field-container span {
+  background-color: #fff;
+  color: cornflowerblue;
+  font-size: 0.95rem;
+  cursor: pointer;
+  padding-top: 0.5rem;
+}
+
+.login-field-container span:hover {
+  text-decoration: underline;
+}

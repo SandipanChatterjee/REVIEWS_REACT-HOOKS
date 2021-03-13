@@ -1,0 +1,25 @@
+.watchlist-button {
+  width: 20rem;
+  height: 3rem;
+  background-color: #0e63be;
+  color: #fff;
+  border-radius: 0.2rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.txt {
+  display: flex;
+  background-color: #0e63be;
+  margin-left: 28%;
+  padding-top: 0.75rem;
+}
+.icon-container-1 {
+  /* margin-top: 0.rem; */
+  background-color: #0e63be;
+  margin-right: 0.5rem;
+}
+.icon-modified {
+  background-color: #0e63be;
+  color: #fff;
+}

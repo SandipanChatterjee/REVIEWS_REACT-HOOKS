@@ -1,0 +1,58 @@
+.movie-title {
+  display: flex;
+  justify-content: space-between;
+  font-size: xx-large;
+  margin-top: 1rem;
+}
+.movie-desc {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: small;
+}
+.movie-desc-p1 {
+  margin-right: 1rem;
+}
+.movie-desc-p2 {
+  margin: 0 1rem;
+}
+
+.movie-desc .genre {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.movie-desc .genre .movie-items {
+  text-transform: uppercase;
+}
+.story {
+  text-align: justify;
+  margin: 1rem 0;
+}
+
+.casts {
+  display: flex;
+}
+
+.casts .more {
+  color: #f5c593;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-left: 0.5rem;
+}
+
+.item .movie-picture {
+  margin-top: 2.5rem;
+}
+
+.average-rating {
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+}
+.users-rated {
+  font-size: 0.65rem;
+  text-align: center;
+}
