@@ -114,7 +114,7 @@ class Header extends Component {
 
   onSuggestionSelected = (suggestion) => {
     let id = sessionStorage.getItem("Reviews.ID");
-    this.props.history.push(`/home/movie/?ref=${id}`);
+    this.props.history.push(`/home/movie/${id}`);
   };
 
   onSuggestionsClearRequested = () => {

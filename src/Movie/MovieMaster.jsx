@@ -3,7 +3,7 @@ import React, { Fragment, useEffect, useState, useRef } from "react";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { connect } from "react-redux";
-import { Redirect } from "react-router-dom";
+import { Redirect, useParams } from "react-router-dom";
 import axios from "../eaxios";
 import { convertDate, isEmptyObj, LoadingSpinner, year } from "../utils";
 import "./MovieMaster.css";
@@ -12,7 +12,6 @@ import MoviePicture from "./Photo/MoviePicture";
 import MovieRating from "./Rating/MovieRating";
 import MovieTrailer from "./Video/MovieTrailer";
 import WatchList from "./WatchList/WatchList";
-import { location } from "../utils";
 
 const MovieMaster = (props) => {
   const [movie, setMovie] = useState({});
@@ -25,7 +24,7 @@ const MovieMaster = (props) => {
   const [ratingLoader, setRatingLoader] = useState(() => false);
   const [reviewId, setReviewId] = useState(() => null);
   const isFirstRun = useRef(true);
-
+  const { id } = useParams();
   let errorMsg = null;
   useEffect(() => {
     if (isFirstRun.current) {
@@ -91,15 +90,10 @@ const MovieMaster = (props) => {
     setLoading(false);
   };
 
-  const getReviewId = () => {
-    return props.match.params.id;
-  };
-
   useEffect(() => {
     console.log("useEffect#2");
-    const reviewId = getReviewId();
-    fetchInitMovie(reviewId);
-  }, [location.search]);
+    fetchInitMovie(id);
+  }, [id]);
 
   useEffect(() => {
     if (!isEmptyObj(movie)) setCasts(movie.members.casts.slice(0, 3));
